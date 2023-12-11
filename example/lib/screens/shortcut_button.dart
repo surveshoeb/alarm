@@ -21,7 +21,7 @@ class _ExampleAlarmHomeShortcutButtonState
     double? volume;
 
     if (delayInHours != 0) {
-      dateTime = dateTime.copyWith(second: 0, millisecond: 0);
+      // dateTime = dateTime.copyWith(second: 0, millisecond: 0);
       volume = 0.5;
     }
 

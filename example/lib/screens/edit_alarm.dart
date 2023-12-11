@@ -28,7 +28,7 @@ class _ExampleAlarmEditScreenState extends State<ExampleAlarmEditScreen> {
 
     if (creating) {
       selectedDateTime = DateTime.now().add(const Duration(minutes: 1));
-      selectedDateTime = selectedDateTime.copyWith(second: 0, millisecond: 0);
+      // selectedDateTime = selectedDateTime.copyWith(second: 0, millisecond: 0);
       loopAudio = true;
       vibrate = true;
       volume = null;
@@ -66,10 +66,10 @@ class _ExampleAlarmEditScreenState extends State<ExampleAlarmEditScreen> {
 
     if (res != null) {
       setState(() {
-        selectedDateTime = selectedDateTime.copyWith(
-          hour: res.hour,
-          minute: res.minute,
-        );
+        // selectedDateTime = selectedDateTime.copyWith(
+        //   hour: res.hour,
+        //   minute: res.minute,
+        // );
         if (selectedDateTime.isBefore(DateTime.now())) {
           selectedDateTime = selectedDateTime.add(const Duration(days: 1));
         }
